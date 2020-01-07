@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="anagram.AnagramTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-01-07T19:03:00" hostname="vateran" time="0.004">
+  <properties/>
+  <testcase name="whenInputIsAnagramString_shouldReturnTrue" classname="anagram.AnagramTests" time="0.002"/>
+  <testcase name="whenInputContainsMixCaseAnagramString_shouldReturnTrue" classname="anagram.AnagramTests" time="0.0"/>
+  <testcase name="whenInputContainsNumberAnagramString_shouldReturnTrue" classname="anagram.AnagramTests" time="0.001"/>
+  <testcase name="whenInputContainsEspecialCharAnagramString_shouldReturnTrue" classname="anagram.AnagramTests" time="0.0"/>
+  <testcase name="whenInputStringsAreNotAnagram_shouldReturnFalse" classname="anagram.AnagramTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
