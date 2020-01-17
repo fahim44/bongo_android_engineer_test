@@ -1,0 +1,3 @@
+2.a) Here Factory design-pattern can be used to build "Car" & "Plan" concrete class. We pass type in "VehicleFactory"'s "getVehicle" method & it will return concrete class.
+
+  b) We can also implement Builder design-pattern to get the concrete classes. 
