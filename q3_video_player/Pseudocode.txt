@@ -1,0 +1,77 @@
+////////////////////////////
+
+object DataSource {
+    function initializeVideo {
+        getVideoDataStream and set video ready to play        
+    }
+
+    function play {
+        IF video is readyToPlay, DO
+            play video
+        ENDIF    
+    }
+
+    function pause {
+        IF isVideoPlaying(), DO
+            pause video
+        ENDIF
+    }
+
+    function forward {
+        IF video can go forward, DO
+            go forward
+        ENDIF    
+    }
+
+    function rewind {
+        IF video can rewind, DO
+            video rewind
+        ENDIF    
+    }
+
+    function isVideoPlaying {
+        IF video initialize and playing DO RETURN true
+        ELSE RETURN false    
+    }
+}
+
+
+//////////////////////////////////////////////////////////////////
+
+class ViewModel {
+    constructor() {
+        setup Observer
+        CALL DataSource.initializeVideo()
+    }
+
+    function playButtonClicked {
+        IF DataSource.isVideoPlaying() DO,
+            CALL DataSource.pause()
+        ENDIF
+        ELSE DO,
+            CALL DataSource.play()
+        ENDELSE
+    }
+
+
+    function forwardButtonCLicked {
+        CALL DataSource.forward()
+    }
+
+    function rewindButtonCLicked {
+        CALL DataSource.rewind()
+    }
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+class View {
+    constructor {
+       INITIALIZE Views
+       INITIALIZE ViewModel
+       setup views' events to viewModel
+    }
+}

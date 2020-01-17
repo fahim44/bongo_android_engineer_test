@@ -1,0 +1,1 @@
+3. For this program i will use MVVM structural pattern with observer pattern data streaming and singleton pattern for dataSource. One of the reason to singleton pattern for dataSource, to make dataSource thread-safe.
